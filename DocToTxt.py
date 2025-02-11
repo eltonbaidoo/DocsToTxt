@@ -1,12 +1,23 @@
 from docx import Document
 
 # Load the .docx file
-doc = Document('Name of File.docx')
+doc = Document('HW1 Introduction 2.docx')
 #replace the file name with the file you want to convert
-#Inlcude the path in it does not have a file 
 
 # Extract and print the text
 option = int(input("1. Print in Console \n 2. Export to Txt file "))
 
-for paragraph in doc.paragraphs:
-    print(paragraph.text)
+
+#conditional statement
+
+if option == 2:
+    exportName = input("Enter the name of the file you want to export: ")
+    with open(exportName, 'w') as file:
+        for paragraph in doc.paragraphs:
+            file.write(paragraph.text + '\n')
+    print("File has been exported successfully")
+else:
+    for paragraph in doc.paragraphs:
+        print(paragraph.text)
+        
+#end of code
