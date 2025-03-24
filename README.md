@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/github/license/eltonbaidoo/DocsToTxt)  
 ![Repo Stars](https://img.shields.io/github/stars/eltonbaidoo/DocsToTxt?style=social)  
 
-#### 🔹 About**  
+#### 🔹 About
 DocsToTxt is a lightweight Python script that converts `.docx` files into plain `.txt` format **locally**, without requiring an internet connection. This ensures **privacy, speed, and reliability** when processing documents.  
 
 ---
